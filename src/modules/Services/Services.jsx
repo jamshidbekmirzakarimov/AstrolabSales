@@ -7,8 +7,8 @@ import Auto from "../../assets/svg/auto.svg";
 import Test from "../../assets/svg/test.svg";
 import Button from "../../ui/Button/Button";
 import ContactModal from "../../components/ContactModal/ContactModal";
-import Oval1 from "../../assets/svg/services-oval1.svg"
-import Oval2 from "../../assets/svg/services-oval2.svg"
+import Oval1 from "../../assets/svg/services-oval1.svg";
+import Oval2 from "../../assets/svg/services-oval2.svg";
 const Services = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -62,28 +62,28 @@ const Services = () => {
   ];
 
   return (
-   <>
-    <section id="Services" className={style.services}>
-      <div className="container">
-        <h2>Xizmatlarimiz</h2>
-        <ul>
-          {dataServices.map((item) => (
-            <li key={item.id}>
-              <div className={style.cardTop}>
-                <img src={item.image} alt="web" />
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
-              </div>
-              <Button onClick={handleOpenModal} color={item.colors} />
-            </li>
-          ))}
-        </ul>
-      </div>
-      <img className={style.oval1} src={Oval1} alt="" />
-      <img className={style.oval2} src={Oval2} alt="" />
-    </section>
-    <ContactModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
-   </>
+    <>
+      <section id="Services" className={style.services}>
+        <div className="container">
+          <h2>Xizmatlarimiz</h2>
+          <ul>
+            {dataServices.map((item) => (
+              <li key={item.id}>
+                <div className={style.cardTop}>
+                  <img src={item.image} alt="web" />
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
+                <Button onClick={handleOpenModal} color={item.colors} />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <img className={style.oval1} src={Oval1} alt="" />
+        <img className={style.oval2} src={Oval2} alt="" />
+      </section>
+      <ContactModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+    </>
   );
 };
 

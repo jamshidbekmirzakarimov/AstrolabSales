@@ -18,9 +18,12 @@ const Customer = () => {
         <h2>Hamkorlarimiz</h2>
 
         <div className={style.customer__card}>
-          <img src={customerImg1} alt="" />
-          <img src={customerImg2} alt="" />
-          <img src={customerImg3} alt="" />
+          <img
+            src={"https://juba.uz/wp-content/uploads/2021/02/a51-150x150.png"}
+            alt=""
+          />
+          <img src={"https://juba.uz/wp-content/uploads/2021/02/a3-150x150.png"} alt="" />
+          <img src={"https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"} alt="" />
           <img src={customerImg4} alt="" />
           <img src={customerImg5} alt="" />
           <img src={customerImg6} alt="" />
