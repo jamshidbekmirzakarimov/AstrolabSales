@@ -1,0 +1,99 @@
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f1eeff;
+  position: relative;
+  h2 {
+    color: #2c2e33;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    position: relative;
+    z-index: 5;
+    li {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      block-size: auto;
+      width: 380px;
+
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      border-top: 12px solid transparent;
+
+      &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        &:nth-child(1) {
+          border-top: 12px solid #010066;
+          transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        &:nth-child(2) {
+          border-top: 12px solid #FD6C04;
+          transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        &:nth-child(3) {
+          border-top: 12px solid #206CFF;
+          transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        &:nth-child(4) {
+          border-top: 12px solid #3AB094;
+          transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        &:nth-child(5) {
+          border-top: 12px solid #F06C7A;
+          transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        &:nth-child(6) {
+          border-top: 12px solid #FFDA0A;
+          transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+      }
+      img {
+        margin-bottom: 34px;
+      }
+      h3 {
+        color: #2c2e33;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 12px;
+      }
+      p {
+        color: #6a727d;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .oval1{
+    position: absolute;
+    top: 100px;
+    right: -200px;
+    z-index: 1;
+  }
+  .oval2{
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+    z-index: 1;
+  }
+}

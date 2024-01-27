@@ -1,0 +1,100 @@
+.footer {
+    &__top {
+        background-image: url(../../assets/svg/footerbg.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        padding-top: 108px;
+        padding-bottom: 40px;
+    }
+    .container {
+        width: 100%;
+        max-width: 1240px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    &__top__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 39px;
+        
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 29px;
+            
+            a {
+                color: #FFF;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+        
+        div {
+            display: flex;
+            gap: 20px;
+        }
+    }
+    
+    &__bottom__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        p {
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 178%;
+        }
+        
+        .footer__bottom__gmail {
+            color:#FFF;
+            text-align: right;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+        }
+        
+        .footer__bottom__tel {
+            color: var(--wht, #FFF);
+            text-align: right;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+        }
+    }
+    
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        
+        h3 {
+            color: #2C2E33;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 178%;
+        }
+        
+        p {
+            color: #2C2E33;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 178%;
+        }
+    }
+}

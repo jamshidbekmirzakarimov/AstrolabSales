@@ -1,0 +1,109 @@
+.hero {
+  padding-top: 160px;
+  height: 100vh;
+  background-image: url(../../assets/svg/herobg2.svg);
+  background-repeat: no-repeat;
+  background-position: 0px -150px;
+  background-size: 100%;
+  overflow: hidden;
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .textbox {
+      position: relative;
+      z-index: 2;
+      .star {
+        position: relative;
+        h1 {
+          width: 100%;
+          max-width: 613px;
+          color: #2c2e33;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin-bottom: 20px;
+        }
+        img {
+          position: absolute;
+          right: 100px;
+          top: 140px;
+        }
+      }
+      p {
+        width: 100%;
+        max-width: 652px;
+        color: #6a727d;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+        margin-bottom: 40px;
+      }
+      .btn {
+        padding: 11px 22px;
+        border-radius: 100px;
+        background: #010066;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        z-index: 100;
+      }
+    }
+    .end {
+      position: relative;
+      .circle {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        top: -30px;
+        right: -30px;
+        border: 1px solid #010066;
+        width: 176px;
+        height: 176px;
+        border-radius: 50%;
+        .textcircle {
+          position: absolute;
+          animation: anim 8s infinite linear;
+          animation-iteration-count: infinite;
+        }
+        .minicircle {
+          width: 16px;
+          height: 16px;
+          background-color: #fff;
+          border: 1px solid #010066;
+          border-radius: 50%;
+        }
+      }
+    }
+    .star3 {
+      position: absolute;
+      top: 380px;
+      right: 410px;
+    }
+    .star2 {
+      position: absolute;
+      bottom: 35px;
+      left: 145px;
+      z-index: 1;
+    }
+  }
+  .star4 {
+    bottom: 150px;
+    right: -40px;
+    position: absolute;
+  }
+}
+
+@keyframes anim {
+  0% {
+    transform: rotateZ(360deg);
+  }
+}

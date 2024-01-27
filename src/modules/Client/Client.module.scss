@@ -1,0 +1,118 @@
+.client {
+    margin-bottom: 100px;
+    height: 735px;
+    background-image: url(../../assets/svg/clientbg.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    .container {
+        width: 100%;
+        max-width: 1240px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    h2 {
+        text-align: center;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 60px */
+        margin-bottom: 60px;
+    }
+    
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            max-width: 380px;
+            width: 100%;
+            border-radius: 12px;
+            background: #FFF;
+            padding: 20px 20px 42px 20px;
+            border-top: 10px solid #206CFF;
+            transition: 0.3s ease;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+
+            &:nth-child(2) {
+                border-top: 10px solid #FE7831; 
+            }
+
+            &:nth-child(3) {
+                border-top: 10px solid #3AB094;
+            }
+        }
+    }
+    
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    &__text {
+        color: #6A727D;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 31px;
+    }
+    
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    
+    &__left__name {
+        color: #2C2E33;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+    }
+    
+    &__left__country {
+        color: #2C2E33;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    &__right {
+        background-color: #FFF;;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__star {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+}
