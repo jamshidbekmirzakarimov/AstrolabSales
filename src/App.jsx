@@ -4,8 +4,8 @@ function App() {
   return (
     <>
       <Header/>
-      {/* <Hero/>
-      <Contact/>
+      <Hero/>
+      {/* <Contact/>
       <Services/>
       <Customer/>
       <Portfolio/>

@@ -5,6 +5,7 @@ import Star2 from "../../assets/svg/star2.svg";
 import Star3 from "../../assets/svg/star3.svg";
 import Star4 from "../../assets/svg/star4.svg";
 import HeroImg from "../../assets/images/hero-bg.png";
+import HeroImgMob from "../../assets/images/hero-bg-mobile.png";
 import CircleText from "../../assets/svg/circle-text.svg";
 import ContactModal from "../../components/ContactModal/ContactModal";
 
@@ -34,7 +35,7 @@ const Hero = () => {
               </button>
             </div>
             <div className={style.end}>
-              <img src={HeroImg} alt="" />
+              <img className={style.heroImg}  src={HeroImg} alt=""  />
               <div className={style.circle}>
                 <img className={style.textcircle} src={CircleText} alt="" />
                 <div className={style.minicircle}></div>

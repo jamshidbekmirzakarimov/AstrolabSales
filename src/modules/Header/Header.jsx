@@ -75,7 +75,7 @@ const Header = () => {
                 Qayta aloqa
               </button>
             </div>
-              <img onClick={handleOpenMenu} src={Burger} alt="" />
+              <img className={style.burger} onClick={handleOpenMenu} src={Burger} alt="" />
           </div>
         </div>
       </div>
