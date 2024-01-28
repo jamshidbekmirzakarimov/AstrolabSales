@@ -64,3 +64,125 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 850px) {
+  .contact{
+    .wrapper{
+      justify-content: center;
+      flex-direction: column-reverse;
+      .contacttext{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2 {
+          font-size: 32px;
+          margin-bottom: 12px;
+          text-align: center;
+        }
+        p {
+          font-size: 20px;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+      }
+      .forma{
+        margin-bottom: 20px;
+        input {
+          width: 480px !important;
+          height: 80px;
+          font-size: 18px;
+        }
+        button {
+          top: 5px;
+          left: 275px !important;
+          width: 200px !important;
+          height: 70px;
+          font-size: 16px;
+        }
+      }
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .contact{
+    .wrapper{
+      justify-content: center;
+      flex-direction: column-reverse;
+      .contacttext{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2 {
+          font-size: 20px;
+          margin-bottom: 12px;
+          text-align: center;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+      }
+      .forma{
+        margin-bottom: 20px;
+        input {
+          width: 343px !important;
+          height: 50px !important;
+          font-size: 15px !important;
+          padding-left: 10px !important;
+        }
+        button {
+          top: 5px;
+          left: 207px !important;
+          width: 130px !important;
+          height: 40px !important;
+          font-size: 13px !important;
+        }
+      }
+      img{
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 375px) {
+  .contact{
+    .wrapper{
+      .forma{
+        margin-bottom: 20px;
+        input {
+          max-width: 270px !important;
+          height: 50px !important;
+          font-size: 13px !important;
+          padding-left: 10px !important;
+        }
+        button {
+          top: 5px;
+          left: 165px !important;
+          width: 100px !important;
+          height: 40px !important;
+          font-size: 12px !important;
+        }
+      }
+      img{
+        width: 91px;
+        height: 98px;
+      }
+    }
+  }
+}

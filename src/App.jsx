@@ -5,10 +5,10 @@ function App() {
     <>
       <Header/>
       <Hero/>
-      {/* <Contact/>
+      <Contact/>
       <Services/>
       <Customer/>
-      <Portfolio/>
+      {/* <Portfolio/>
       <Client/>
       <Article/>
       <Footer/> */}

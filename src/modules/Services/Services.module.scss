@@ -97,3 +97,26 @@
     z-index: 1;
   }
 }
+
+
+
+
+@media only screen and (max-width: 1110px) {
+  .services {
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 30px;
+      column-gap: 30px;
+      position: relative;
+      z-index: 5;
+    }
+    .oval1{
+      display: none;
+    }
+    .oval2{
+      display: none;
+    }
+  }
+}
