@@ -18,19 +18,82 @@ const Customer = () => {
         <h2>Hamkorlarimiz</h2>
 
         <div className={style.customer__card}>
-          <img
-            src={"https://juba.uz/wp-content/uploads/2021/02/a51-150x150.png"}
-            alt=""
-          />
-          <img src={"https://juba.uz/wp-content/uploads/2021/02/a3-150x150.png"} alt="" />
-          <img src={"https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"} alt="" />
-          <img src={customerImg4} alt="" />
-          <img src={customerImg5} alt="" />
-          <img src={customerImg6} alt="" />
-          <img src={customerImg7} alt="" />
-          <img src={customerImg8} alt="" />
-          <img src={customerImg9} alt="" />
-          <img src={customerImg10} alt="" />
+          <div className={style.customerBox}>
+            <img
+              src={"https://juba.uz/wp-content/uploads/2021/02/a51-150x150.png"}
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={"https://juba.uz/wp-content/uploads/2021/02/a3-150x150.png"}
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={
+                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+              }
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={
+                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+              }
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={
+                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+              }
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={
+                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+              }
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={
+                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+              }
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={
+                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+              }
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={
+                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+              }
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={
+                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+              }
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>

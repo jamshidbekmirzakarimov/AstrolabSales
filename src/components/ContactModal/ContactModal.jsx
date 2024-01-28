@@ -4,16 +4,12 @@ import style from "./ContactModal.module.scss";
 import Supermodal from "../../components/Supermodal/Supermodal";
 import modalLogo from "../../assets/svg/modallogo.svg";
 import InputMask from "react-input-mask";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import Close from "../../assets/svg/close.svg"
+import { toast } from "react-hot-toast";
+import Close from "../../assets/svg/close.svg";
 const ContactModal = ({ setIsModalOpen, isModalOpen }) => {
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const handleSendMessage = (e) => {
-    if (!lastName || !phoneNumber) {
-      return alert("F.I.SH and Phone number required");
-    }
     e.preventDefault;
     const bot = {
       TOKEN: "6343007118:AAGwbwQo1LteIjSszg1clg2ls0-59C4-7jM",
@@ -48,7 +44,7 @@ const ContactModal = ({ setIsModalOpen, isModalOpen }) => {
         setLastName("");
         setPhoneNumber("");
 
-        toast.success("Message sent");
+        toast.success("Buyurtmangiz qabul qilindi!");
       })
       .catch((error) => {
         console.error("Error sending message:", error);
@@ -62,8 +58,8 @@ const ContactModal = ({ setIsModalOpen, isModalOpen }) => {
   };
 
   const isButtonDisabled =
-  !/^[A-Za-z]+$/.test(lastName.replace(/\s/g, "")) ||
-  !/\+998 \(\d{2}\) \d{3}-\d{2}-\d{2}/.test(phoneNumber);
+    !/^[A-Za-z]+$/.test(lastName.replace(/\s/g, "")) ||
+    !/\+998 \(\d{2}\) \d{3}-\d{2}-\d{2}/.test(phoneNumber);
   return (
     <>
       {isModalOpen && (
@@ -75,15 +71,16 @@ const ContactModal = ({ setIsModalOpen, isModalOpen }) => {
             <p>Aloqa uchun ma’motlaringizni qoldiring</p>
             <form>
               <input
-              className={style.input}
+                className={style.input}
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 type="text"
                 placeholder="Ism"
                 required
+                pattern="[^0-9]"
               />
               <InputMask
-               className={style.input}
+                className={style.input}
                 min={12}
                 minLength={30} // This is incorrect, it should be maxLength
                 mask="+\9\9\8\ (99) 999-99-99"
@@ -94,15 +91,26 @@ const ContactModal = ({ setIsModalOpen, isModalOpen }) => {
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
               />
-              <button disabled={isButtonDisabled} onClick={handleSendMessage}>
+              <button
+                className={`${
+                  isButtonDisabled ? "opacity0" : "opacity1"}`}
+                disabled={isButtonDisabled}
+                onClick={handleSendMessage}
+              >
                 YUBORISH
               </button>
             </form>
-            <img onClick={() => setIsModalOpen(false)} width={20} height={20} className={style.close} src={Close} alt="" />
+            <img
+              onClick={() => setIsModalOpen(false)}
+              width={20}
+              height={20}
+              className={style.close}
+              src={Close}
+              alt=""
+            />
           </div>
         </Supermodal>
       )}
-      <ToastContainer />
     </>
   );
 };

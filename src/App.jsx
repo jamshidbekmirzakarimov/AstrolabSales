@@ -4,14 +4,14 @@ function App() {
   return (
     <>
       <Header/>
-      <Hero/>
+      {/* <Hero/>
       <Contact/>
       <Services/>
       <Customer/>
       <Portfolio/>
       <Client/>
       <Article/>
-      <Footer/>
+      <Footer/> */}
     </>
   );
 }

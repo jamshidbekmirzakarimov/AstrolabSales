@@ -8,3 +8,16 @@
       cursor: pointer;
     }
   }
+
+
+  @media only screen and (max-width: 350px) {
+    .lang {
+      display: flex;
+      gap: 5px;
+      margin-right: 5px;
+      align-items: center;
+      img{
+        cursor: pointer;
+      }
+    }
+  }

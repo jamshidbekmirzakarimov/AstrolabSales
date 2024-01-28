@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import style from "./Contact.module.scss";
 import BigLogo from "../../assets/svg/big-logo.svg";
 import InputMask from "react-input-mask";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -41,7 +40,7 @@ const Contact = () => {
       .then((data) => {
         console.log("Message sent:", data);
         setPhoneNumber("");
-        toast.success("Message sent");
+        toast.success("Buyurtmangiz qabul qilindi!");
       })
       .catch((error) => {
         console.error("Error sending message:", error);
@@ -103,8 +102,6 @@ const Contact = () => {
             <img src={BigLogo} alt="" />
           </div>
         </div>
-
-        <ToastContainer />
       </section>
     </>
   );
