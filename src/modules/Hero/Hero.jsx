@@ -35,7 +35,10 @@ const Hero = () => {
               </button>
             </div>
             <div className={style.end}>
+              <picture>
+                <source srcSet={HeroImgMob} media="(max-width: 500px)"/>
               <img className={style.heroImg}  src={HeroImg} alt=""  />
+              </picture>
               <div className={style.circle}>
                 <img className={style.textcircle} src={CircleText} alt="" />
                 <div className={style.minicircle}></div>

@@ -75,6 +75,7 @@
   transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   background-color: #fff;
   height: 100vh;
+  z-index: 999;
   .close {
     border: none;
     background-color: transparent;

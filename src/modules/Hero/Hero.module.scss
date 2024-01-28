@@ -13,7 +13,7 @@
     justify-content: space-between;
     .textbox {
       position: relative;
-      z-index: 2;
+      z-index: 0;
       .star {
         position: relative;
         h1 {
@@ -107,6 +107,7 @@
     right: 0px;
     position: absolute;
     animation: star4 35s linear infinite;
+    z-index: -1;
   }
 }
 
@@ -183,7 +184,6 @@
 @media only screen and (max-width: 800px) {
   .hero {
     background-image: url(../../assets/svg/mobile-herobg.svg);
-    background-color: red;
     background-size: 100%;
     .wrapper {
       .end {
@@ -234,7 +234,6 @@
 @media only screen and (max-width: 650px) {
   .hero {
     background-image: url(../../assets/svg/mobile-herobg.svg);
-    background-color: red;
     background-size: 100%;
     .wrapper {
       .end {
@@ -281,7 +280,7 @@
     }
     .end {
       width: 100%;
-      max-width: 300px;
+      max-width: 100%;
       height: 273px;
       .circle {
         width: 136px !important;
@@ -292,7 +291,7 @@
         }
       }
       .heroImg{
-        width: 400px;
+        width: 100%;
         height: 100%;
       }
     }
@@ -339,11 +338,25 @@
           z-index: 100;
         }
       }
+      .star2 {
+        position: absolute;
+        top: 0;
+        left: 145px;
+        z-index: 1;
+        animation: star2 25s linear infinite;
+      }
+      .star3 {
+        position: absolute;
+        top: 180px;
+        right: 210px;
+        animation: star3 18s linear infinite;
+      }
     }
     .end {
-      width: 100%;
-      max-width: 100%;
-      height: 400px;
+      position: relative;
+      width: 0;
+      max-width: 0;
+      height: 373px !important;
       margin-bottom: 0;
       .circle {
         width: 136px !important;
@@ -354,7 +367,7 @@
         }
       }
       .heroImg{
-
+        width: 100%;
         height: 100%;
       }
     }
