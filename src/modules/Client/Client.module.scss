@@ -1,6 +1,6 @@
 .client {
     margin-bottom: 100px;
-    height: 735px;
+    min-height: 735px;
     background-image: url(../../assets/svg/clientbg.svg);
     background-repeat: no-repeat;
     background-position: top;
@@ -32,6 +32,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
         li {
             max-width: 380px;
             width: 100%;
@@ -114,5 +116,47 @@
         display: flex;
         align-items: center;
         gap: 6px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .client {
+        ul {
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .client {
+        h2 {
+            text-align: left;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .client {
+        h2 {
+            text-align: left;
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .client {
+        h2 {
+            text-align: left;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
     }
 }

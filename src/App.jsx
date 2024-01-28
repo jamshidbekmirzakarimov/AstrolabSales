@@ -8,10 +8,10 @@ function App() {
       <Contact/>
       <Services/>
       <Customer/>
-      {/* <Portfolio/>
+      <Portfolio/>
       <Client/>
       <Article/>
-      <Footer/> */}
+      <Footer/>
     </>
   );
 }

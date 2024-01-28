@@ -1,10 +1,12 @@
 @import "../../scss//variable.scss";
 .modal {
     position: relative;
-    width: 517px;
+    max-width: 517px;
     border-radius: 12px;
     background: #fff;
     padding: 40px 40px 80px 40px;
+    margin: 10px;
+    z-index: 999999 !important;
     
     div {
       display: flex;
@@ -76,3 +78,37 @@
     }
   }
   
+
+  @media only screen and (max-width: 500px) {
+    .modal{
+      padding: 30px 30px 30px 30px;
+      form{
+        button {
+          height: 50px;
+          font-size: 18px;
+        }
+        .input {
+          font-size: 18px;
+          
+          &::placeholder {
+            color: #D5D5D8;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%;
+          }
+        }
+      }
+      p {
+        color: #2c2e33;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        margin-bottom: 30px; 
+        text-align: center;
+      }
+    }
+  }

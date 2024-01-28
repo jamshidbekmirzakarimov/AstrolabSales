@@ -15,13 +15,15 @@ const Footer = () => {
   const [activeItem, setActiveItem] = useState("Главная");
   const handleClick = (item) => {
     setActiveItem(item);
+
   };
   return (
     <footer className={style.footer}>
       <div className={style.footer__top}>
         <div className={style.container}>
           <div className={style.footer__top__wrapper}>
-            <div>
+           <div className={style.content}>
+           <div className={style.logo}>
               <a onClick={(e) => onActive(e, "#header")} href="/">
                 <img src={footerWhiteLogo} alt="" />
               </a>
@@ -56,6 +58,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+           </div>
 
             <div className={style.social}>
               <a href="/">
@@ -127,6 +130,7 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
+
           </div>
         </div>
       </div>

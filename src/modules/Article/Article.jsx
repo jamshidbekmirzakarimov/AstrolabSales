@@ -38,7 +38,10 @@ const Article = () => {
           </div>
         </div>
 
-        <ContactModal setIsModalOpen={setIsModalOpen}  isModalOpen={isModalOpen}   />
+        <ContactModal
+          setIsModalOpen={setIsModalOpen}
+          isModalOpen={isModalOpen}
+        />
       </div>
     </>
   );

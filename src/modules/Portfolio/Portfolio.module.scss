@@ -39,9 +39,48 @@
       width: 585px;
       height: 346px;
       transition: 0.3s ease;
-      background-color: red;
       &:hover {
         transform: scale(1.03);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .portfolio {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 585px;
+        height: 346px;
+        transition: 0.3s ease;
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 585px;
+        height: 202px;
+        transition: 0.3s ease;
+        &:hover {
+          transform: scale(1.03);
+        }
       }
     }
   }
