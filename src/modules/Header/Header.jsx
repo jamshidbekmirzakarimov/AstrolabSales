@@ -7,11 +7,14 @@ import useScroll from "../../hooks/useScroll";
 import useJavaScript from "../../hooks/useJavaScript";
 import Burger from "../../assets/svg/burger.svg";
 import Close from "../../assets/svg/close.svg";
+import { languages } from "../../localization/languages";
+import { useLocalization } from "../../hooks/useLocalization";
 const Header = () => {
   const { onActive } = useJavaScript();
   const [scrollNumber] = useScroll();
   const [hasScrolled, setHasScrolled] = useState(false);
   const [activeItem, setActiveItem] = useState("Главная");
+  const [lang, setLang] = useLocalization();
   const handleClick = (item) => {
     setActiveItem(item);
   };
@@ -46,7 +49,7 @@ const Header = () => {
                   className="nav-title"
                   onClick={(e) => onActive(e, "#Services")}
                 >
-                  Xizmatlarimiz
+                  {languages[lang].header.services}
                 </li>
                 <li
                   className="nav-title"

@@ -68,32 +68,33 @@ const ContactModal = ({ setIsModalOpen, isModalOpen }) => {
             <div>
               <img src={modalLogo} alt="" />
             </div>
-            <p>Aloqa uchun ma’motlaringizni qoldiring</p>
+            <p>Aloqa uchun ma’lumotlaringizni qoldiring</p>
             <form>
-              <input
-                className={style.input}
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-                type="text"
-                placeholder="Ism"
-                required
-                pattern="[^0-9]"
-              />
-              <InputMask
-                className={style.input}
-                min={12}
-                minLength={30} // This is incorrect, it should be maxLength
-                mask="+\9\9\8\ (99) 999-99-99"
-                maskChar=" "
-                required
-                placeholder="Telefon raqamingizni kiriting"
-                type="tel"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
-              />
+              <div className={style.inputBox}>
+                <input
+                  className={style.input}
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  type="text"
+                  placeholder="Ism"
+                  required
+                  pattern="[^0-9]"
+                />
+                <InputMask
+                  className={style.input}
+                  min={12}
+                  minLength={30} // This is incorrect, it should be maxLength
+                  mask="+\9\9\8\ (99) 999-99-99"
+                  maskChar=" "
+                  required
+                  placeholder="Telefon raqamingizni kiriting"
+                  type="tel"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                />
+              </div>
               <button
-                className={`${
-                  isButtonDisabled ? "opacity0" : "opacity1"}`}
+                className={`${isButtonDisabled ? "opacity0" : "opacity1"}`}
                 disabled={isButtonDisabled}
                 onClick={handleSendMessage}
               >

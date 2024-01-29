@@ -41,7 +41,7 @@ const Customer = () => {
           <div className={style.customerBox}>
             <img
               src={
-                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+                "https://juba.uz/wp-content/uploads/2021/04/logo13-removebg-preview-150x150.png"
               }
               alt=""
             />
@@ -49,7 +49,7 @@ const Customer = () => {
           <div className={style.customerBox}>
             <img
               src={
-                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+                "https://juba.uz/wp-content/uploads/2021/02/A7-150x150.png"
               }
               alt=""
             />
@@ -57,7 +57,7 @@ const Customer = () => {
           <div className={style.customerBox}>
             <img
               src={
-                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+                "https://juba.uz/wp-content/uploads/2021/02/a2-150x150.png"
               }
               alt=""
             />
@@ -65,7 +65,7 @@ const Customer = () => {
           <div className={style.customerBox}>
             <img
               src={
-                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+                "https://juba.uz/wp-content/uploads/2021/02/a6-150x150.png"
               }
               alt=""
             />
@@ -73,7 +73,7 @@ const Customer = () => {
           <div className={style.customerBox}>
             <img
               src={
-                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+                "https://juba.uz/wp-content/uploads/2021/04/GRY_LO9GO_ONAYLI-150x150.png"
               }
               alt=""
             />
@@ -81,7 +81,7 @@ const Customer = () => {
           <div className={style.customerBox}>
             <img
               src={
-                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+                "https://juba.uz/wp-content/uploads/2021/02/A8-150x150.png"
               }
               alt=""
             />
@@ -89,7 +89,23 @@ const Customer = () => {
           <div className={style.customerBox}>
             <img
               src={
-                "https://juba.uz/wp-content/uploads/2021/02/asaxiy-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-150x150.png"
+                "https://juba.uz/wp-content/uploads/2022/05/a21-150x150.png"
+              }
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={
+                "https://juba.uz/wp-content/uploads/2022/05/uva-150x150.png"
+              }
+              alt=""
+            />
+          </div>
+          <div className={style.customerBox}>
+            <img
+              src={
+                "https://juba.uz/wp-content/uploads/2021/02/a1-150x150.png"
               }
               alt=""
             />
