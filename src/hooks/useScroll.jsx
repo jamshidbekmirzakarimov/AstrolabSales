@@ -9,9 +9,9 @@ function useScroll() {
   };
 
   function myFunction() {
-    const a = document.querySelector("#Services").offsetTop - 80;
+    const a = document.querySelector("#Client").offsetTop - 100;
     const b = document.querySelector("#Portfolio").offsetTop - 80;
-    const c = document.querySelector("#Client").offsetTop - 100;
+    const c = document.querySelector("#Services").offsetTop - 80;
 
     const scroll = document.documentElement.scrollTop;
     let navbarlinks = document.querySelectorAll(".nav-title");
