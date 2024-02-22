@@ -61,7 +61,7 @@ const Footer = () => {
            </div>
 
             <div className={style.social}>
-              <a href="/">
+              <a href="https://astrolab.uz/">
                 <svg
                   width="24"
                   height="20"
@@ -79,7 +79,7 @@ const Footer = () => {
                   />
                 </svg>
               </a>
-              <a href="/">
+              <a href="https://astrolab.uz/">
                 <svg
                   width="24"
                   height="22"
@@ -93,7 +93,7 @@ const Footer = () => {
                   />
                 </svg>
               </a>
-              <a href="/">
+              <a href="https://astrolab.uz/">
                 <svg
                   width="11"
                   height="20"
@@ -107,7 +107,7 @@ const Footer = () => {
                   />
                 </svg>
               </a>
-              <a href="/">
+              <a href="https://astrolab.uz/">
                 <svg
                   width="24"
                   height="24"
@@ -138,7 +138,7 @@ const Footer = () => {
       <div className={style.container}>
         <div className={style.footer__bottom}>
           <h3>© ASTROLAB GROUP </h3>
-          <p>Все права защищены 2024</p>
+          <p>Barcha huquqlar himoyalangan 2024</p>
         </div>
       </div>
     </footer>

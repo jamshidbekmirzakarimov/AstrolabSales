@@ -6,11 +6,11 @@ function App() {
       <Header/>
       <Hero/>
       <Contact/>
-      <Services/>
       <Customer/>
       <Portfolio/>
-      <Client/>
+      {/* <Client/> */}
       <Article/>
+      <Services/>
       <Footer/>
     </>
   );

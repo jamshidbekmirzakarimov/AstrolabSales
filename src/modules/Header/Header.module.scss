@@ -36,10 +36,10 @@
       .telnumber {
         color: #0e0e0e;
         font-family: Inter;
-        font-size: 16px;
+        font-size: 24px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 178%;
+        font-weight: 400;
+        line-height: 29px;
         margin-right: 19px;
       }
       .btn {
@@ -50,9 +50,9 @@
         border-radius: 50px;
         color: var(--wht, #fff);
         font-family: Inter;
-        font-size: 18px;
+        font-size: 14px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 178%; /* 32.04px */
         border: none;
         cursor: pointer;

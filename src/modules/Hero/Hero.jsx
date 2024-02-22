@@ -22,35 +22,23 @@ const Hero = () => {
           <div className={style.wrapper}>
             <div className={style.textbox}>
               <div className={style.star}>
-                <h1>Imkoniyatlaringizni biz bilan kengaytiring</h1>
-                <img src={Star} alt="star" />
+                <h1>Mijozlarngiz sonini sayt orqali ko’paytiring!</h1>
               </div>
               <p>
-                Biznesingizning kelajagini jadallik bilan rivojlanib kelayotgan
-                kompaniya bilan birga zabt eting. Bizning xizmatlarimiz orqali
-                biznesingizda daromadingiz va mijozlaringiz miqdorini oshiring.
+              Sayt orqali o’z mahsulot yoki xizmatlaringizni sotuvlarini amalga oshiring!
               </p>
+              <h4>*Natija bo’lmasa pul to’lamang!</h4>
               <button onClick={handleOpenModal} className={style.btn}>
                 Buyurtma berish
               </button>
             </div>
             <div className={style.end}>
-              <picture>
-                <source srcSet={HeroImgMob} media="(max-width: 500px)"/>
-              <img className={style.heroImg}  src={HeroImg} alt=""  />
-              </picture>
-              <div className={style.circle}>
-                <img className={style.textcircle} src={CircleText} alt="" />
-                <div className={style.minicircle}></div>
-              </div>
+                <img width={376} height={486} className={style.heroImg} src={HeroImg} alt="" />
             </div>
-            <img className={style.star3} src={Star3} alt="" />
-            <img className={style.star2} src={Star2} alt="" />
           </div>
         </div>
-        <img className={style.star4} src={Star4} alt="" />
       </section>
-      <ContactModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
+      <ContactModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
     </>
   );
 };

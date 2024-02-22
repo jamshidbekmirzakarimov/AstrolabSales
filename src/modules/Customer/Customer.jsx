@@ -11,11 +11,12 @@ import customerImg9 from "../../assets/images/hamkor9.png";
 import customerImg10 from "../../assets/images/hamkor10.png";
 import wer from "../../assets/svg/customerbg.svg";
 import style from "./Customer.module.scss";
+import Temur from "../../assets/images/temur.jpg"
 const Customer = () => {
   return (
-    <div className={style.customer}>
+    <div className={style.customer} id="Client">
       <div className={style.container}>
-        <h2>Hamkorlarimiz</h2>
+        <h2>Bizning hamkorlarimiz!</h2>
 
         <div className={style.customer__card}>
           <div className={style.customerBox}>
@@ -110,6 +111,13 @@ const Customer = () => {
               alt=""
             />
           </div>
+        </div>
+        <div className={style.comment}>
+       <div className={style.comment_box}>
+       <p className={style.comment_title}>Agar kimda-kim bizning qudratimizga shubxa qilsa, biz qurgan binolarga boqsin</p>
+          <h3 className={style.comment_title}>-Amir Temur</h3>
+       </div>
+          <img src={Temur} alt="" />
         </div>
       </div>
     </div>

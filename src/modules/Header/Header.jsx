@@ -61,11 +61,11 @@ const Header = () => {
                   className="nav-title"
                   onClick={(e) => onActive(e, "#Client")}
                 >
-                  Mijozlar
+                  Hamkorlarimiz
                 </li>
               </ul>
             </nav>
-            <ChangeLang />
+            {/* <ChangeLang /> */}
             <div className={style.endBox}>
               <a className={style.telnumber} href="tel:+998712000321">
                 +998 71 200-03-21
@@ -75,7 +75,7 @@ const Header = () => {
                 className={style.btn}
               >
                 <img src={Call} alt="call" />
-                Qayta aloqa
+                Qayta aloqa uchun
               </button>
             </div>
               <img className={style.burger} onClick={handleOpenMenu} src={Burger} alt="" />
@@ -114,7 +114,7 @@ const Header = () => {
                     className="nav-title"
                     onClick={(e) => {onActive(e, "#Client");  handleCloseMenu();}}
                   >
-                    Mijozlar
+                  Hamkorlarimiz
                   </li>
                 </ul>
               </nav>

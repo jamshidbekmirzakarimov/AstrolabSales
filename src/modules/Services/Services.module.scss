@@ -4,12 +4,12 @@
   background-color: #f1eeff;
   position: relative;
   h2 {
-    color: #2c2e33;
+    color: #000000;
     font-family: Inter;
-    font-size: 40px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    line-height: 72px;
     text-align: center;
     margin-bottom: 60px;
   }
@@ -42,23 +42,23 @@
           transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
         }
         &:nth-child(2) {
-          border-top: 12px solid #FD6C04;
+          border-top: 12px solid #fd6c04;
           transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
         }
         &:nth-child(3) {
-          border-top: 12px solid #206CFF;
+          border-top: 12px solid #206cff;
           transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
         }
         &:nth-child(4) {
-          border-top: 12px solid #3AB094;
+          border-top: 12px solid #3ab094;
           transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
         }
         &:nth-child(5) {
-          border-top: 12px solid #F06C7A;
+          border-top: 12px solid #f06c7a;
           transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
         }
         &:nth-child(6) {
-          border-top: 12px solid #FFDA0A;
+          border-top: 12px solid #ffda0a;
           transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
         }
       }
@@ -84,13 +84,13 @@
     }
   }
 
-  .oval1{
+  .oval1 {
     position: absolute;
     top: 100px;
     right: -200px;
     z-index: 1;
   }
-  .oval2{
+  .oval2 {
     position: absolute;
     left: -100px;
     bottom: 0;
@@ -98,11 +98,11 @@
   }
 }
 
-
-
-
 @media only screen and (max-width: 1210px) {
   .services {
+    h2 {
+      font-size: 50px;
+    }
     ul {
       display: flex;
       justify-content: center;
@@ -112,11 +112,20 @@
       position: relative;
       z-index: 5;
     }
-    .oval1{
+    .oval1 {
       display: none;
     }
-    .oval2{
+    .oval2 {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .services {
+    h2{
+      font-size: 35px;
+      line-height: 40px;
     }
   }
 }

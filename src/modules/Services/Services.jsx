@@ -20,43 +20,43 @@ const Services = () => {
     {
       id: 1,
       image: Web,
-      title: "Веб-сайты",
-      desc: "Разрабатываем сайты масштабами от сайтов-визиток до корпоративных порталов. При выборе дизайна упор делается на желания клиента, входит наполнение сайта контентом, адаптивная вёрстка.",
+      title: "Veb-saytlar",
+      desc: "Biz veb-saytlarni vizitka saytlaridan korporativ portallarga qadar ishlab chiqamiz. Dizaynni tanlashda mijozning xohish-istaklariga e'tibor qaratiladi, saytni tarkib bilan to'ldirish, moslashuvchan tartib kiradi.",
       colors: "#010066",
     },
     {
       id: 1,
       image: App,
-      title: "Мобильные приложения",
-      desc: "Наша специализация - создавать прогрессивные мобильные приложения на Android и IOS. Сами приложения созданы с учётом последующего развития и продвижения бизнеса.",
+      title: "Mobil ilovalar",
+      desc: "Bizning ixtisosimiz Android va IOS-da progressiv mobil ilovalarni yaratishdir. Ilovalarning o'zi biznesning keyingi rivojlanishi va rivojlanishini hisobga olgan holda yaratilgan.",
       colors: "#FD6C04",
     },
     {
       id: 1,
       image: TelegramBot,
-      title: "Телеграм-боты",
-      desc: "Мы разрабатываем ботов любой сложности и с самым разным функционалом. Кроме этого, мы можем интегрировать бота с вашей CRM-системой.",
+      title: "Telegram botlari",
+      desc: "Biz har qanday murakkablikdagi va turli xil funktsiyalarga ega Botlarni ishlab chiqamiz. Bundan tashqari, biz botni CRM tizimingiz bilan birlashtira olamiz.",
       colors: "#206CFF",
     },
     {
       id: 1,
       image: Auto,
-      title: "Автоматизация бизнеса",
-      desc: "Создаём системы автоматизации бизнеса. Помимо создания информационного web-портала, разрабатываем методы организации рабочего процесса и контроля выполнения поручений",
+      title: "Biznesni avtomatlashtirish",
+      desc: "Biz biznesni avtomatlashtirish tizimlarini yaratamiz. Axborot veb-portalini yaratishdan tashqari, biz ish jarayonini tashkil etish va topshiriqlarning bajarilishini nazorat qilish usullarini ishlab chiqamiz",
       colors: "#3AB094",
     },
     {
       id: 1,
       image: Test,
-      title: "Тестирование ПО",
-      desc: "Протестируем ПО, проведем ряд тестов на юзабилити, проверим код на чистоту и расскажем о причинах имеющихся багов.",
+      title: "Dasturiy ta'minotni sinovdan o'tkazish",
+      desc: "Biz dasturiy ta'minotni sinab ko'ramiz, foydalanish uchun bir qator testlarni o'tkazamiz, kodni tozaligini tekshiramiz va mavjud xatolarning sabablari haqida gaplashamiz.",
       colors: "#F06C7A",
     },
     {
       id: 1,
       image: Web,
-      title: "Аутстаффинг",
-      desc: "Аутстаффинг – это вывод персонала за штат компании и его оформление в аутстаффинговой компании. Аутстаффер берет на себя функции выплаты заработной платы, уплаты налогов, исполнения трудового законодательства и т.д.",
+      title: "Outstaffing",
+      desc: "Autstaffing-bu xodimlarni kompaniya xodimlari uchun olib qo'yish va uni autstaffing kompaniyasida ro'yxatdan o'tkazish. Autstaffer ish haqini to'lash, soliqlarni to'lash, mehnat qonunchiligini bajarish va boshqalar funktsiyalarini o'z zimmasiga oladi.",
       colors: "#FFDA0A",
     },
   ];
@@ -65,7 +65,7 @@ const Services = () => {
     <>
       <section id="Services" className={style.services}>
         <div className="container">
-          <h2>Xizmatlarimiz</h2>
+          <h2>Bizning xizmatlarimiz</h2>
           <ul>
             {dataServices.map((item) => (
               <li key={item.id}>

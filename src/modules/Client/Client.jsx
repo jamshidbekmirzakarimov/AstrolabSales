@@ -81,7 +81,7 @@ const Client = () => {
     },
   ];
   return (
-    <div className={style.client} id="Client">
+    <div className={style.client}>
       <div className={style.container}>
         <h2>Mijozlarimizning biz haqimizda fikirlari</h2>
 

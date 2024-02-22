@@ -26,7 +26,7 @@ const Article = () => {
               <div>
                 <button onClick={handleOpenModal}>
                   <img src={callIcon} alt="" />
-                  Ariza qoldirish
+                  Qayta aloqa uchun
                 </button>
                 <a href="tel: +998 71 200 03 21">+998 71 200 03 21</a>
               </div>
