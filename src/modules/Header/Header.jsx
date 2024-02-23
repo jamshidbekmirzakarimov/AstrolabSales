@@ -49,7 +49,7 @@ const Header = () => {
                   className="nav-title"
                   onClick={(e) => onActive(e, "#Services")}
                 >
-                  {languages[lang].header.services}
+              Xizmatlarimiz
                 </li>
                 <li
                   className="nav-title"
